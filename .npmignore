@@ -15,3 +15,5 @@ public
 .eslintignore
 .eslintrc.js
 tsconfig.json
+lib/test.js
+lib/test.d.ts
