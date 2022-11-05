@@ -1,0 +1,64 @@
+{
+  "name": "@sandbags-protocol/sandbags-utils",
+  "version": "0.0.1",
+  "description": "sandbags utils",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "babel": "babel src --out-dir lib --copy-files --extensions '.ts'",
+    "build": "npm run babel && tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandbags-protocol/sandbags-utils.git"
+  },
+  "keywords": [
+    "sandbags"
+  ],
+  "author": "Alex Xu",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sandbags-protocol/sandbags-utils/issues"
+  },
+  "homepage": "https://github.com/sandbags-protocol/sandbags-utils#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.16.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/chai": "^4.3.3",
+    "@types/convict": "^6.1.1",
+    "@types/convict-format-with-validator": "^6.0.2",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/debug": "^4.1.7",
+    "@types/deep-equal": "^1.0.1",
+    "@types/express": "^4.17.13",
+    "@types/k-bucket": "^5.0.1",
+    "@types/mocha": "^10.0.0",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^16.11.6",
+    "@types/node-ipc": "^9.2.0",
+    "@types/uuid": "^8.3.1",
+    "@types/validator": "^13.6.6",
+    "@types/web3-provider-engine": "^14.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "7",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "4",
+    "prettier": "^2.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "eth-crypto": "^2.4.0",
+    "ethereum-cryptography": "^1.1.2"
+  }
+}

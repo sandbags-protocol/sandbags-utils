@@ -1,0 +1,17 @@
+node_modules
+src
+output
+*.swp
+*.log
+.env
+upload
+public
+.yarn
+.yarnrc.yml
+.DS_Store
+.gitignore
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.js
+tsconfig.json

@@ -1,0 +1,12 @@
+node_modules
+lib
+output
+*.swp
+*.log
+.env
+upload
+public
+.yarn
+.yarnrc.yml
+.DS_Store
+src/test.ts
