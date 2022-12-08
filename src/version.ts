@@ -23,7 +23,7 @@ export default class SandbagsVersion {
     return semver.valid(this.version) === this.version
   }
 
-  private checkValid(...versions: SandbagsVersion[]): void {
+  static checkValid(...versions: SandbagsVersion[]): void {
     for (let i = 0; i < versions.length; i++) {
       const version = versions[i]
       if (!version.isValid) {
@@ -32,7 +32,7 @@ export default class SandbagsVersion {
     }
   }
 
-  private checkRangeValid(...ranges: string[]): void {
+  static checkRangeValid(...ranges: string[]): void {
     for (let i = 0; i < ranges.length; i++) {
       const range = ranges[i]
       if (!semver.validRange(range)) {
@@ -42,7 +42,7 @@ export default class SandbagsVersion {
   }
 
   cmp(comparator: semver.Operator, other: SandbagsVersion): boolean {
-    this.checkValid(this, other)
+    SandbagsVersion.checkValid(this, other)
     return semver.cmp(this.version, comparator, other.toString())
   }
 
@@ -67,8 +67,8 @@ export default class SandbagsVersion {
   }
 
   satisfies(range: string): boolean {
-    this.checkValid(this)
-    this.checkRangeValid(range)
+    SandbagsVersion.checkValid(this)
+    SandbagsVersion.checkRangeValid(range)
     return semver.satisfies(this.version, range)
   }
 }
