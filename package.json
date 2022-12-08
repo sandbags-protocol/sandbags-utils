@@ -1,6 +1,6 @@
 {
   "name": "@sandbags-protocol/sandbags-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sandbags utils",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -43,6 +43,7 @@
     "@types/multer": "^1.4.7",
     "@types/node": "^16.11.6",
     "@types/node-ipc": "^9.2.0",
+    "@types/semver": "^7.3.13",
     "@types/uuid": "^8.3.1",
     "@types/validator": "^13.6.6",
     "@types/web3-provider-engine": "^14.0.1",
@@ -59,6 +60,7 @@
   },
   "dependencies": {
     "eth-crypto": "^2.4.0",
-    "ethereum-cryptography": "^1.1.2"
+    "ethereum-cryptography": "^1.1.2",
+    "semver": "^7.3.8"
   }
 }
