@@ -4,6 +4,10 @@
 
 This project is a collection of common functions/features used in developing applications and tools for Sandbags Protocol.
 
+
+> **Warning**  
+> This is to remind you that Sandbags Protocol is a very early project, we are committed to blockchain security and pay close attention to user experience. This repo will change frequently, please **do not** use this project in production environment until version reaches **1.0.0**.
+
 ## Usage
 
 Use NPM / Yarn in node.js:
