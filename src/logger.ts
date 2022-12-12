@@ -86,6 +86,12 @@ export class SandbagsLogStream extends Writable {
     //   console.log('pipe', message)
     // })
   }
+
+  copy(): SandbagsLogStream {
+    const steam = new SandbagsLogStream(this.topic)
+    steam.level = this.level
+    return steam
+  }
 }
 
 export default function logger(topic: string): SandbagsLogger {

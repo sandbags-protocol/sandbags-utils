@@ -164,7 +164,8 @@ logger.fatal('fatal message')
 // [topic][FATAL] fatal message
 
 // stream usage
-someOtherLogReporter.outputStream = logger.stream
+someOtherLogReporter.outputStream = logger.stream.copy()
+someOtherLogReporter.outputStream.level = SandbagsLogLevel.INFO
 ```
 
 ## Version
