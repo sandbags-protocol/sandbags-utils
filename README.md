@@ -209,5 +209,5 @@ See [LICENSE](./LICENSE) file.
 [3]: https://img.shields.io/npm/l/@sandbags-protocol/sandbags-utils
 [4]: https://github.com/sandbags-protocol/sandbags-utils/blob/main/LICENSE
 
-[5]: https://img.shields.io/npm/types/ethereum-cryptography.svg
-[6]: https://www.npmjs.com/package/ethereum-cryptography
+[5]: https://img.shields.io/npm/types/@sandbags-protocol/sandbags-utils.svg
+[6]: https://www.npmjs.com/package/@sandbags-protocol/sandbags-utils
